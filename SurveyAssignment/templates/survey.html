@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Dojo Survey Index</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="form-group">
+        <form action="/result" method="post">
+        <p>Your Name: <input type="text" name='name'></p>
+        <p>Dojo Location: 
+        <select name="location" id="location">
+            <option value="Seattle">Seattle</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Boise">Boise</option>
+            <option value="Chicago">Chicago</option>
+        </select>
+        </p>
+        <p> Favorite Language:
+        <select name="language" id="language">
+            <option value="Python">Python</option>
+            <option value="JS">Javascript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+        </p>
+        <span>Comment (optional):</span>
+        <p><textarea name="message" id="message" cols="30" rows="10"></textarea></p>
+        <p><input type="submit" value="Button"></p>
+        </form>
+        </div>
+    </body>
+</html>
